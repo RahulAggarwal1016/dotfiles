@@ -7,6 +7,9 @@
 To store our dotfiles we are using a git bare repository. Learn more about them here before proceeding
 https://www.atlassian.com/git/tutorials/dotfiles
 
+- Don't pull into a bare git repository
+- Don't cd into a bare git repository (perform commands from $HOME)
+
 1. Clone the repository into your systems configuration directory.
 
 ```

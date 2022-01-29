@@ -7,6 +7,7 @@ alias ~='cd ~'
 alias d='cd ~/Desktop'
 alias dl='cd ~/Downloads'
 alias cfg="cd ~/.config"
+alias zsh='cd ~/.config/zsh'
 
 # School
 alias uw='ssh -Y r28aggar@linux.student.cs.uwaterloo.ca'
@@ -24,8 +25,6 @@ alias rnm='rm -rf node_modules/ && npm install'
 alias ls='lsd'
 alias la='ls -al'
 alias zrc='nvim ~/.config/zsh/.zshrc'
-alias zsh='cd ~/.config/zsh'
-alias ncfg='nvim ~/.config/'
 alias gbls='brew list && npm list -g --depth 0'
 alias al='nvim ~/.config/zsh/aliases'
 alias xcode='open -a Xcode'
