@@ -1,0 +1,7 @@
+[credential]
+	helper = store
+[user]
+	name = Rahul Aggarwal
+	email = rahul.aggarwal@faire.com
+[init]
+	defaultBranch = master

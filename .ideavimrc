@@ -1,0 +1,62 @@
+" note these keybinds will only work in a buffer
+
+let mapleader=" "
+
+set clipboard+=unnamed
+set clipboard+=ideaput
+
+" common vim settings
+set incsearch
+set ignorecase
+set matchpairs
+set number 
+set relativenumber
+set so=10
+set sidescrolloff=8
+set smartcase
+set visualbell
+
+" idea specific settings
+set ideamarks
+set ideajoin
+set ideawrite
+set ideastatusicon=gray
+
+" plugins
+set surround
+set commentary
+set NERDTree
+
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+nnoremap fu :action FindUsages<CR>
+nnoremap gc :action GotoClass<CR>
+nnoremap gi :action GotoImplementation<CR>
+nnoremap gp :action GotToSuperMethod<CR>
+nnoremap gt :action GotoTest<CR>
+nnoremap gd :action GotoDeclaration<CR>
+nnoremap gb :action Back<CR>
+
+nnoremap <s-H> :action PreviousTab<CR>
+nnoremap <s-L> :action NextTab<CR>
+nnoremap :w<CR> :action Macro.formatted save<CR> 
+
+nnoremap <leader>l :action RecentLocations<CR>
+nnoremap <leader>f :action GotoFile<CR>
+nnoremap <leader>b :action RecentFiles<CR>
+nnoremap <leader>F :action FindInPath<CR>
+nnoremap <leader>sa :action SearchEverywhere<CR>
+nnoremap <leader>e :action SelectInProjectView<CR>
+nnoremap <leader>gb :action Annotate<CR>
+nnoremap <leader>gs :aciton Git.Show.Stage<CR>
+
+nnoremap <leader>q :q<CR>
+nnoremap <leader>r :action Replace<CR>
+nnoremap <leader>v :action SplitVertically<CR>
+nnoremap <leader>h :action SplitHorizontally<CR>
+
+vnoremap <s-TAB> <gv
+vnoremap <TAB> >gv
