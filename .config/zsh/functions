@@ -5,7 +5,7 @@ function zsh_add_file() {
 
 # Create a new directory and enter it
 function mkd() {
-	mkdir -p "$@" && cd "$_";
+	  mkdir -p "$@" && cd "$_";
 }
 
 function zsh_add_plugin() {
