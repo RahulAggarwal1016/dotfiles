@@ -28,7 +28,6 @@ colors:
     - { index: 16, color: "0xff9e64" }
     - { index: 17, color: "0xdb4b4b" }
 
-background_opacity: 0.70
 working_directory: "None"
 
 font:
@@ -61,6 +60,8 @@ window:
   padding:
     x: 2
     y: 2
+
+  opacity: 1
 
   dimensions:
     columns: 100

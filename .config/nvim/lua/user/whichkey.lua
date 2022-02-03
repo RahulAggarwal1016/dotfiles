@@ -3,6 +3,21 @@ if not status_ok then
 	return
 end
 
+local status_ok, view = pcall(require, "nvim-tree.view")
+if not status_ok then
+	return
+end
+
+local function toggle_tree()
+	if view.win_open() then
+		require("nvim-tree").close()
+		require("bufferline.state").set_offset(0)
+	else
+		require("bufferline.state").set_offset(31, "")
+		require("nvim-tree").find_file(true)
+	end
+end
+
 local setup = {
 	plugins = {
 		marks = true, -- shows a list of your marks on ' and `
@@ -71,24 +86,30 @@ local opts = {
 -- all leader key mappings go here (not in keymappings.lua)
 local mappings = {
 	["a"] = { "<cmd>Alpha<cr>", "Alpha" },
-	["b"] = {
-		"<cmd>lua require('telescope.builtin').buffers(require('telescope.themes').get_dropdown{previewer = false})<cr>",
-		"Buffers",
-	},
 	["d"] = {
 		"<cmd>lua vim.lsp.diagnostic.set_loclist()<cr>",
 		"Diagnostics",
 	},
 	["w"] = { "<cmd>w!<CR>", "Save" },
 	["q"] = { "<cmd>q!<CR>", "Quit" },
-	["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
-	["c"] = { "<cmd>:Bdelete<CR>", "Close Buffer" },
+	["e"] = { toggle_tree, "Explorer" },
 	["f"] = {
 		"<cmd>lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown{previewer = false})<cr>",
 		"Find files",
 	},
 	["F"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
 	["P"] = { "<cmd>Telescope projects<cr>", "Projects" },
+	["c"] = { ":BufferClose<CR>", "Close Buffer" },
+
+	b = {
+		name = "Buffers",
+		b = {
+			"<cmd>lua require('telescope.builtin').buffers(require('telescope.themes').get_dropdown{previewer = false})<cr>",
+			"Buffers",
+		},
+		l = { ":BufferOrderByLanguage<CR>", "By Language" },
+		d = { ":BufferOrderByDirectory<CR>", "By Directory" },
+	},
 
 	p = {
 		name = "Packer",

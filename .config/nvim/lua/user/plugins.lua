@@ -45,8 +45,7 @@ return packer.startup(function(use)
 	use("windwp/nvim-autopairs") -- Autopairs, integrates with both cmp and treesitter
 	use("kyazdani42/nvim-web-devicons") -- Icons package
 	use("kyazdani42/nvim-tree.lua") -- Filetree
-	use("akinsho/bufferline.nvim") -- Improved GUI
-	use("moll/vim-bbye") -- Modify buffers
+	use("romgrk/barbar.nvim") -- Buffer line
 	use("nvim-lualine/lualine.nvim") -- Status line
 	use("akinsho/toggleterm.nvim") -- Toggle integrated terminal
 	use("ahmedkhalf/project.nvim") -- Open pass projects easily

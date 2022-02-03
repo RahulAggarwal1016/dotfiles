@@ -1,5 +1,3 @@
-vim.cmd("colorscheme default")
-
 local colorscheme = "tokyonight"
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
 
@@ -10,3 +8,5 @@ else
 	vim.g.tokyonight_lualine_bold = true
 	vim.cmd([[colorscheme tokyonight]])
 end
+
+-- vim.cmd("colorscheme darkplus")

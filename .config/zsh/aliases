@@ -9,11 +9,15 @@ alias dl='cd ~/Downloads'
 alias cfg="cd ~/.config"
 alias zsh='cd ~/.config/zsh'
 
+
 # School
 alias uw='ssh -Y r28aggar@linux.student.cs.uwaterloo.ca'
 alias cpl='g++ --std=c++17 -o'
 alias leak='valgrind --leak-check=full --track-origins=yes --show-leak-kinds=all'
+
+# Dot aliases
 alias dot='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
+alias daa='dot add -u'
 
 # Shortcuts 
 alias tls="tmux ls"
@@ -77,7 +81,6 @@ alias paths='echo -e ${PATH//:/\\n}'
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
-
 
 # confirm before overwriting something
 alias cp='cp -i'

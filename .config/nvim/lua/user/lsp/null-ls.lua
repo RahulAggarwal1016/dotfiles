@@ -9,6 +9,8 @@ local formatting = null_ls.builtins.formatting
 -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics
 local diagnostics = null_ls.builtins.diagnostics
 
+local code_actions = null_ls.builtins.code_actions
+
 null_ls.setup({
 	debug = false,
 	on_attach = function(client)
@@ -17,6 +19,7 @@ null_ls.setup({
 		end
 	end,
 	sources = {
+		code_actions.gitsigns,
 		formatting.prettierd, -- javascript, typescript, html etc
 		formatting.black.with({ extra_args = { "--fast" } }), -- python
 		formatting.stylua, -- lua files
