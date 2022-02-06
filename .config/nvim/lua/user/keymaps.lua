@@ -31,8 +31,8 @@ keymap("i", "!", "!<c-g>u", opts)
 keymap("i", "?", "?<c-g>u", opts)
 
 -- Navigate buffers
-keymap("n", "<S-l>", ":BufferNext<CR>", opts)
-keymap("n", "<S-h>", ":BufferPrevious<CR>", opts)
+keymap("n", "<S-l>", ":bnext<CR>", opts)
+keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
 -- Resize with arrows
 -- keymap("n", "<C-Up>", ":resize -2<CR>", opts)

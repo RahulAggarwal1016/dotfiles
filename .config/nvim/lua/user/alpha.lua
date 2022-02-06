@@ -1,4 +1,5 @@
 local status_ok, alpha = pcall(require, "alpha")
+
 if not status_ok then
 	return
 end
@@ -22,12 +23,6 @@ dashboard.section.buttons.val = {
 	dashboard.button("c", "  Configuration", ":e ~/.config/nvim/init.lua <CR>"),
 	dashboard.button("q", "  Quit Neovim", ":qa<CR>"),
 }
-
--- local function footer()
--- 	return "---------------------------------------------------------"
--- end
-
--- dashboard.section.footer.val = footer()
 
 dashboard.section.footer.opts.hl = "Type"
 dashboard.section.header.opts.hl = "Include"
