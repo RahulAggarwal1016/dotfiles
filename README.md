@@ -8,7 +8,7 @@ To store our dotfiles we are using a git bare repository. Learn more about them 
 https://www.atlassian.com/git/tutorials/dotfiles
 
 - Don't pull into a bare git repository
-- Don't cd into a bare git repository (perform commands from $HOME)
+- Don't cd into a bare git repository (perform commands from `$HOME`)
 
 1. Run Homebrew script
 
@@ -19,9 +19,7 @@ chmod +x brew.sh
 
 ## Setup Node with Global Permissions
 
-1.
-
-Make a directory for NVM.
+1. Make a directory for NVM.
 
 ```
 mkdir ~/.nvm
@@ -55,12 +53,6 @@ mkdir ~/.npm-global
 npm config set prefix '~/.npm-global'
 ```
 
-Ensure that your `.zshrc` has the following export path statement
-
-```
-export PATH=~/.npm-global/bin:$PATH
-```
-
 ## IDE
 
 ![image](https://user-images.githubusercontent.com/35639417/147967100-96f9dd12-26f3-4e13-9d40-e05f9a174e66.png)
@@ -90,6 +82,7 @@ cd ~/.config/nvim && nvim
 
 ```
 npm install -g @fsouza/prettierd
+npm install -g eslint_d
 ```
 
 6. Install any necessary packages for lsp servers.
