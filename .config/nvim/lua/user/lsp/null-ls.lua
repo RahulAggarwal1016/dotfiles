@@ -19,6 +19,7 @@ null_ls.setup({
 		end
 	end,
 	sources = {
+		diagnostics.eslint_d,
 		code_actions.gitsigns,
 		formatting.prettierd, -- javascript, typescript, html etc
 		formatting.black.with({ extra_args = { "--fast" } }), -- python
