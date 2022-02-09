@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 brew update
@@ -33,6 +34,7 @@ brew install mysql@5.7
 brew install grep 
 brew install openssh
 brew install screen
+brew install bash
 
 # Applications
 brew cask install --appdir="/Applications" google-chrome

@@ -4,16 +4,29 @@
 
 **NOTE:** This readme assumes you are running on a computer running MacOS.
 
-To store our dotfiles we are using a git bare repository. Learn more about them here before proceeding
-https://www.atlassian.com/git/tutorials/dotfiles
+To store your dotfiles you will want to use a bare git repository.
+Learn more about them here before proceeding https://www.atlassian.com/git/tutorials/dotfiles
+
+Tips:
 
 - Don't pull into a bare git repository
 - Don't cd into a bare git repository (perform commands from `$HOME`)
 
-1. Run Homebrew script
+## Sensible macOS defaults
+
+When setting up a new Mac, you may want to set some sensible macOS defaults:
 
 ```
-chmod +x brew.sh
+chmod -R +x .macos
+./.macos
+```
+
+## Install Homebrew formulae
+
+When setting up a new Mac, you may want to install some common Homebrew formulae.
+
+```
+chmod -R +x ./brew.sh
 ./brew.sh
 ```
 

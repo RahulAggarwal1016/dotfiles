@@ -17,6 +17,7 @@ alias leak='valgrind --leak-check=full --track-origins=yes --show-leak-kinds=all
 # Dot aliases
 alias dot='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 alias daa='dot add -u'
+alias ds='dot status'
 alias dcm='dot commit -m'
 alias dcam='dot add -u && dot commit -m'
 
