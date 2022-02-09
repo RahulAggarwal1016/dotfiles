@@ -7,6 +7,9 @@ brew upgrade
 # Save Homebrew’s installed location.
 BREW_PREFIX=$(brew --prefix)
 
+brew uninstall --ignore-dependencies node
+brew uninstall --force node
+
 # Install packages
 brew install git 
 brew install neovim
@@ -14,8 +17,6 @@ brew install python3
 brew install zsh
 brew install tmux
 brew install yarn
-brew uninstall --ignore-dependencies node
-brew uninstall --force node
 brew install nvm
 brew install gradle
 
