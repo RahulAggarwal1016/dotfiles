@@ -22,10 +22,11 @@ alias ds='dot status'
 alias dcm='dot commit -m'
 alias dcam='dot add -u && dot commit -m'
 
-# Shortcuts 
 alias tls="tmux ls"
+alias tk="tmux kill-session -t"
+
+# Shortcuts 
 alias rgr="ranger"
-alias tks="tmux kill-server"
 alias npmu='npm uninstall'
 alias npmi='npm install'
 alias rnm='rm -rf node_modules/ && npm install'
@@ -77,7 +78,7 @@ alias gs='git status'
 alias gst='git stash'
 alias undo='git reset --soft HEAD~1'
 
-alias src='source ~/.config/zsh/.zshrc' 
+alias zsrc='source ~/.config/zsh/.zshrc' 
 alias paths='echo -e ${PATH//:/\\n}'
 
 # colorize grep output (good for log files)

@@ -30,6 +30,13 @@ colors:
 
 working_directory: "None"
 
+shell:
+  program: /bin/zsh
+  args:
+    - -l
+    - -c
+    - "tmux attach -t personal"
+
 font:
   normal:
     family: "Hack Nerd Font"

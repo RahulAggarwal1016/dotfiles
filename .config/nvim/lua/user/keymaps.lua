@@ -27,20 +27,17 @@ keymap("i", "?", "?<c-g>u", opts)
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
--- Resize with arrows
--- keymap("n", "<C-Up>", ":resize -2<CR>", opts)
--- keymap("n", "<C-Down>", ":resize +2<CR>", opts)
--- keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
--- keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
-
--- Split panes
-keymap("n", "<leader>v", ":vsplit<CR>", opts)
-keymap("n", "<leader>h", ":split<CR>", opts)
-
--- using option key
--- keymap("n", "†", ":tabnew %<CR>", opts)
--- keymap("n", "√", ":vsplit<CR>", opts)
--- keymap("n", "˙", ":split<CR>", opts)
+-- Jump between tabs
+keymap("n", "<leader>1", "1gt", opts)
+keymap("n", "<leader>2", "2gt", opts)
+keymap("n", "<leader>3", "3gt", opts)
+keymap("n", "<leader>4", "4gt", opts)
+keymap("n", "<leader>5", "5gt", opts)
+keymap("n", "<leader>6", "6gt", opts)
+keymap("n", "<leader>7", "7gt", opts)
+keymap("n", "<leader>8", "8gt", opts)
+keymap("n", "<leader>9", "9gt", opts)
+keymap("n", "<leader>0", ":tablast<CR>", opts)
 
 -- Stay in indent mode
 keymap("v", "<S-Tab>", "<gv", opts)

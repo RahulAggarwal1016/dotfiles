@@ -70,12 +70,23 @@ local opts = {
 
 -- all leader key mappings go here (not in keymappings.lua)
 local mappings = {
+	["v"] = {
+		"<cmd>vsplit<CR>",
+		"Vertical Split",
+	},
+	["h"] = {
+		"<cmd>split<CR>",
+		"Horiztonal Split",
+	},
+	["w"] = {
+		"<cmd>tabnew %<CR>",
+		"New Window",
+	},
 	["a"] = { "<cmd>Alpha<cr>", "Alpha" },
 	["d"] = {
 		"<cmd>lua vim.lsp.diagnostic.set_loclist()<cr>",
 		"Diagnostics",
 	},
-	["w"] = { "<cmd>w!<CR>", "Save" },
 	["q"] = { "<cmd>q!<CR>", "Quit" },
 	["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
 	["f"] = {
@@ -97,6 +108,15 @@ local mappings = {
 		s = { "<cmd>PackerSync<cr>", "Sync" },
 		S = { "<cmd>PackerStatus<cr>", "Status" },
 		u = { "<cmd>PackerUpdate<cr>", "Update" },
+	},
+
+	t = {
+		name = "Terminal",
+		p = { "<cmd>VimuxPromptCommand<CR>", "Prompt" },
+		l = { "<cmd>VimuxRunLastCommand<CR>", "Last" },
+		o = { "<cmd>VimuxOpenRunner<CR>", "Open" },
+		c = { "<cmd>VimuxCloseRunner<CR>", "Close" },
+		z = { "<cmd>VimuxZoomRunner<CR>", "Zoom" },
 	},
 
 	g = {
@@ -147,15 +167,6 @@ local mappings = {
 		R = { "<cmd>Telescope registers<cr>", "Registers" },
 		k = { "<cmd>Telescope keymaps<cr>", "Keymaps" },
 		C = { "<cmd>Telescope commands<cr>", "Commands" },
-	},
-
-	t = {
-		name = "Terminal",
-		n = { "<cmd>lua _NODE_TOGGLE()<cr>", "Node" },
-		p = { "<cmd>lua _PYTHON_TOGGLE()<cr>", "Python" },
-		f = { "<cmd>ToggleTerm direction=float<cr>", "Float" },
-		h = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", "Horizontal" },
-		v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" },
 	},
 }
 

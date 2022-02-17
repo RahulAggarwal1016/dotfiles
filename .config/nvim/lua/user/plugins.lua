@@ -47,7 +47,6 @@ return packer.startup({
 		use("kyazdani42/nvim-web-devicons") -- Icons package
 		use("kyazdani42/nvim-tree.lua") -- Filetree
 		use("nvim-lualine/lualine.nvim") -- Status line
-		use("akinsho/toggleterm.nvim") -- Toggle integrated terminal
 		use("akinsho/bufferline.nvim") -- Bufferline
 		use("moll/vim-bbye") -- Buffer manipulation
 		use("ahmedkhalf/project.nvim") -- Open pass projects easily
@@ -62,8 +61,9 @@ return packer.startup({
 		use("lunarvim/darkplus.nvim")
 		use("folke/tokyonight.nvim")
 
-		-- Tmux/Vim window switches
+		-- Tmux Synergy
 		use("christoomey/vim-tmux-navigator")
+		use("preservim/vimux")
 
 		-- notifications
 		use("rcarriga/nvim-notify")
