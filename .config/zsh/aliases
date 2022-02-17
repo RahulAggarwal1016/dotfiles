@@ -8,6 +8,7 @@ alias d='cd ~/Desktop'
 alias dl='cd ~/Downloads'
 alias cfg="cd ~/.config"
 alias zcfg='cd ~/.config/zsh'
+alias c="clear"
 
 # School
 alias uw='ssh -Y r28aggar@linux.student.cs.uwaterloo.ca'

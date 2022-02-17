@@ -10,6 +10,12 @@ BREW_PREFIX=$(brew --prefix)
 brew uninstall --ignore-dependencies node
 brew uninstall --force node
 
+# Install more recent versions of some macOS tools.
+brew install grep 
+brew install openssh
+brew install screen
+brew install bash
+
 # Install packages
 brew install git 
 brew install neovim
@@ -30,12 +36,6 @@ brew install stylua
 brew install ripgrep
 brew install ranger
 brew install mysql@5.7
-
-# Install more recent versions of some macOS tools.
-brew install grep 
-brew install openssh
-brew install screen
-brew install bash
 
 # Applications
 brew cask install --appdir="/Applications" google-chrome

@@ -29,6 +29,7 @@ unsetopt BEEP
 # to use local modules like prettier
 export PATH="$PATH:./node_modules/.bin" 
 export PATH=~/.npm-global/bin:$PATH
+export PATH=~/.local/bin:$PATH
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

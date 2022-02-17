@@ -17,13 +17,6 @@ vim.g.maplocalleader = " "
 --   term_mode = "t",
 --   command_mode = "c",
 
--- Normal --
--- Better window navigation
-keymap("n", "<C-h>", "<C-w>h", opts)
-keymap("n", "<C-j>", "<C-w>j", opts)
-keymap("n", "<C-k>", "<C-w>k", opts)
-keymap("n", "<C-l>", "<C-w>l", opts)
-
 -- Undo breakpoints
 keymap("i", ",", ",<c-g>u", opts)
 keymap("i", ".", ".<c-g>u", opts)
@@ -41,11 +34,13 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 -- keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
 -- Split panes
-keymap("n", "√", ":vsplit<CR>", opts)
-keymap("n", "˙", ":split<CR>", opts)
-keymap("n", "†", ":tabnew %<CR>", opts)
+keymap("n", "<leader>v", ":vsplit<CR>", opts)
+keymap("n", "<leader>h", ":split<CR>", opts)
 
--- Visual --
+-- using option key
+-- keymap("n", "†", ":tabnew %<CR>", opts)
+-- keymap("n", "√", ":vsplit<CR>", opts)
+-- keymap("n", "˙", ":split<CR>", opts)
 
 -- Stay in indent mode
 keymap("v", "<S-Tab>", "<gv", opts)

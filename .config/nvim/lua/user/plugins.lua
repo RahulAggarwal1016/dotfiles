@@ -62,6 +62,9 @@ return packer.startup({
 		use("lunarvim/darkplus.nvim")
 		use("folke/tokyonight.nvim")
 
+		-- Tmux/Vim window switches
+		use("christoomey/vim-tmux-navigator")
+
 		-- notifications
 		use("rcarriga/nvim-notify")
 
