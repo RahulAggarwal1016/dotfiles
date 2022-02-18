@@ -34,7 +34,7 @@ brew install tree
 brew install black
 brew install stylua
 brew install ripgrep
-brew install ranger
+brew install lf
 brew install mysql@5.7
 
 # Applications
