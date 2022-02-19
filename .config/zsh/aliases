@@ -26,9 +26,6 @@ alias tls="tmux ls"
 alias tk="tmux kill-session -t"
 
 # Shortcuts 
-alias rgr="ranger"
-alias npmu='npm uninstall'
-alias npmi='npm install'
 alias rnm='rm -rf node_modules/ && npm install'
 alias ls='lsd'
 alias la='ls -al'

@@ -1,0 +1,45 @@
+set preview true
+set hidden true
+set drawbox true
+set icons true
+set ignorecase true
+
+#Useful Functions
+
+cmd mkdir ${{
+  printf "Directory Name: "
+  read ans
+  mkdir $ans
+}}
+
+cmd mkfile ${{
+  printf "File Name: "
+  read ans
+  $EDITOR $ans
+}}
+
+# Bindings
+# Remove some defaults
+map m
+map o
+map n
+map "'"
+map '"'
+map d
+map c
+map e
+map f
+
+# Basic Functions
+map d delete
+map p paste
+map x cut
+map y copy
+map mf mkfile
+map md mkdir
+
+# Open Files
+map <enter> $$EDITOR $f
+cmd open $$EDITOR $f 
+
+map . set hidden!
