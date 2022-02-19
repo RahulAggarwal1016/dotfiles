@@ -47,6 +47,8 @@ brew cask install --appdir="/Applications" alacritty
 brew cask install --appdir="/Applications" docker
 brew cask install --appdir="/Applications" discord
 brew cask install --appdir="/Applications" mysqlworkbench
+brew cask install --appdir="/Applications" alfred
+brew cask install --appdir="/Applications" karabiner-elements
 
 # Fonts
 brew tap homebrew/cask-fonts

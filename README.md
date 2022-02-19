@@ -135,13 +135,7 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 ```
 
-2. Install ranger icons.
-
-```
-git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons
-```
-
-3. Install a tmux package manager
+2. Install a tmux package manager
 
 ```
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
@@ -150,8 +144,33 @@ tmux source ~/.tmux.conf
 
 Install plugins by pressing `prefix + I` inside a tmux window.
 
-4. Give alacritty full permissions.
+3. Give alacritty full permissions.
 
 ```
 System Preferences -> Security & Privacy -> Privacy -> Full Disk Access
 ```
+
+## Miscellaneous Mac Tips
+
+1. Remove the Mac Dock.
+
+I find that the Mac doc uses a lot of screen real-estate. I suggest setting it to the smallest size and disregarding it all together.
+
+2. Bring Vim to your Browser.
+
+Install [Vimium](https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb?hl=en) for Google Chrome (enables vim keybinds). The options I use are as follows.
+
+```
+map H previousTab
+map L nextTab
+map <C-h> goBack
+map <C-l> goForward
+```
+
+3. Remove clutter from the Finder.
+
+Hit `Finder -> Preferences` and remove tabs/items that you do not use regularily.
+
+4. Disable Spotlight and use Alfred instead.
+
+Uncheck `System Preferences -> Spotlight -> Keyboard Shortcuts -> Show Spotlight Search`.

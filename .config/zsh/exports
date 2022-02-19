@@ -1,5 +1,6 @@
 export EDITOR="nvim"
 export TERMINAL="alacritty"
+export BROWSER="brave"
 export JAVA_HOME="$(/usr/libexec/java_home -v 16)"
 
 # Prefer US English and use UTF-8.

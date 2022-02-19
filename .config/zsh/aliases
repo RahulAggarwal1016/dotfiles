@@ -34,9 +34,6 @@ alias gbls='brew list && npm list -g --depth 0'
 alias al='nvim ~/.config/zsh/aliases'
 alias xcode='open -a Xcode'
 
-alias fstart='cd ~/Desktop/Faire/backend/docker/compose/dependencies/ && brew services start mysql@5.7 && docker-compose up -d && cd ../../../'
-# alias end='brew services stop mysql@5.7 && docker stop $(docker ps -a -q)'
-
 alias cat='bat'
 
 # git
