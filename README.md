@@ -108,8 +108,6 @@ https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.m
 :checkhealth
 ```
 
-**TIP:** Remap `escape` to `caps` key (in system preferences -> keyboard -> modifier keys)
-
 ## Shell
 
 Change your default system shell to `/bin/zsh` if not done already.
@@ -171,6 +169,10 @@ map <C-l> goForward
 
 Hit `Finder -> Preferences` and remove tabs/items that you do not use regularily.
 
-4. Disable Spotlight and use Alfred instead.
+4. Bring Vim to MacOS.
+
+Use Karabiner elements to add basic Vim keybindings to Mac OS.
+
+5. Disable Spotlight and use Alfred instead.
 
 Uncheck `System Preferences -> Spotlight -> Keyboard Shortcuts -> Show Spotlight Search`.
