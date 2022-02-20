@@ -77,11 +77,15 @@ local function lsp_keymaps(bufnr)
 end
 
 M.on_attach = function(client, bufnr)
+	if client.name == "sumneko_lua" then
+		-- don't want to choose between sumneko_lua formatting and stylua (null-ls)
+		client.resolved_capabilities.document_formatting = false
+	end
 	if client.name == "jsonls" then
 		client.resolved_capabilities.document_formatting = false
 	end
 	if client.name == "tsserver" then
-		-- ts provides formatting so we don't want to choose between ts and null-ls
+		-- don't want to choose between ts formatting and prettier (null-ls)
 		client.resolved_capabilities.document_formatting = false
 	end
 	lsp_keymaps(bufnr)

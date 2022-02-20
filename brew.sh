@@ -27,6 +27,7 @@ brew install nvm
 brew install gradle
 
 # Install utility binaries
+brew install trash-cli
 brew install wget
 brew install bat
 brew install lsd

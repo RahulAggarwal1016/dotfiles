@@ -83,17 +83,12 @@ alias fgrep='fgrep --color=auto'
 # confirm before overwriting something
 alias cp='cp -i'
 alias mv='mv -i'
-alias rm='rm -i'
 
-alias rmd='rm -rf'
+# safely delete
+alias rm='() { trash $@ && ls }'
 
 # update Homebrew, npm, and their installed packages
 alias update='brew update; brew upgrade; brew cleanup; npm install npm -g; npm update -g;'
-
-# Empty the Trash on all mounted volumes and the main HDD.
-# Also, clear Apple’s System Logs to improve shell startup speed.
-# Finally, clear download history from quarantine. https://mths.be/bum
-alias emptytrash='rm -rfv ~/.Trash'
 
 # Show/hide hidden files in Finder
 alias show='defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder'

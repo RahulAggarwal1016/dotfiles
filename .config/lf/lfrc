@@ -18,6 +18,8 @@ cmd mkfile ${{
   $EDITOR $ans
 }}
 
+cmd trash %trash $fx
+
 # Bindings
 # Remove some defaults
 map m
@@ -31,7 +33,7 @@ map e
 map f
 
 # Basic Functions
-map d delete
+map d trash
 map p paste
 map x cut
 map y copy
