@@ -19,8 +19,8 @@ null_ls.setup({
 		end
 	end,
 	sources = {
-		diagnostics.eslint_d,
 		code_actions.gitsigns,
+		diagnostics.eslint_d,
 		formatting.prettierd, -- javascript, typescript, html etc
 		formatting.black.with({ extra_args = { "--fast" } }), -- python
 		formatting.stylua, -- lua files

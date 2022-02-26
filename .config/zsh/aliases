@@ -18,12 +18,15 @@ alias leak='valgrind --leak-check=full --track-origins=yes --show-leak-kinds=all
 # Dot aliases
 alias dot='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 alias daa='dot add -u'
+alias ddiff='dot diff | bat'
 alias ds='dot status'
 alias dcm='dot commit -m'
 alias dcam='dot add -u && dot commit -m'
 
 alias tls="tmux ls"
 alias tk="tmux kill-session -t"
+
+alias fstart='cd ~/Desktop/Faire/backend/docker/compose/dependencies/ && brew services start mysql@5.7 && docker-compose up -d && cd ../../../'
 
 # Shortcuts 
 alias rnm='rm -rf node_modules/ && npm install'

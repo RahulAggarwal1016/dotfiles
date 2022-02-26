@@ -20,8 +20,7 @@ cmd mkfile ${{
 
 cmd trash %trash $fx
 
-# Bindings
-# Remove some defaults
+# Remove some default bindings
 map m
 map o
 map n
