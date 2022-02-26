@@ -87,6 +87,9 @@ return packer.startup({
 		use("tamago324/nlsp-settings.nvim") -- language server settings defined in json
 		use("jose-elias-alvarez/null-ls.nvim") -- for formatters and linters
 
+		-- Scheme Store
+		use("b0o/schemastore.nvim")
+
 		-- telescope
 		use("nvim-telescope/telescope.nvim")
 

@@ -7,7 +7,6 @@ alias ~='cd ~'
 alias d='cd ~/Desktop'
 alias dl='cd ~/Downloads'
 alias cfg="cd ~/.config"
-alias zcfg='cd ~/.config/zsh'
 alias c="clear"
 
 # School
@@ -33,6 +32,7 @@ alias fstart='cd ~/Desktop/Faire/backend/docker/compose/dependencies/ && brew se
 alias rnm='rm -rf node_modules/ && npm install'
 alias ls='lsd'
 alias la='ls -al'
+alias ncfg="nvim ~/.config/nvim/"
 alias zrc='nvim ~/.config/zsh/.zshrc'
 alias gbls='brew list && npm list -g --depth 0'
 alias al='nvim ~/.config/zsh/aliases'
