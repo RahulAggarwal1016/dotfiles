@@ -36,6 +36,7 @@ brew install black
 brew install stylua
 brew install ripgrep
 brew install lf
+brew install tig
 brew install mysql@5.7
 
 # Applications

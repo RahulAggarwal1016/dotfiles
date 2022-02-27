@@ -1,6 +1,8 @@
 # colours
 autoload -Uz colors && colors
 
+eval "$(oh-my-posh --init --shell zsh --config '~/.config/posh/config.json')"
+
 # useful Functions
 source "$ZDOTDIR/functions"
 
@@ -16,7 +18,6 @@ zle_highlight=('paste:none')
 # Normal files to source
 zsh_add_file "vim-mode"
 zsh_add_file "aliases"
-zsh_add_file "prompt"
 zsh_add_file "exports"
 
 # Plugins
