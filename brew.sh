@@ -56,5 +56,9 @@ brew cask install --appdir="/Applications" karabiner-elements
 brew tap homebrew/cask-fonts
 brew install --cask font-hack-nerd-font
 
+# Powerline
+brew tap jandedobbeleer/oh-my-posh
+brew install oh-my-posh
+
 # Remove outdated versions from the cellar.
 brew cleanup

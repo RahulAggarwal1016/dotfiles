@@ -5,8 +5,8 @@
       "alignment": "left",
       "segments": [
         {
-          "background": "#7aa2f7",
-          "foreground": "#111111",
+          "background": "#c386f1",
+          "foreground": "#FFFFFF",
           "leading_diamond": "\ue0b6",
           "properties": {
             "template": " {{ .UserName }} "
@@ -16,7 +16,7 @@
           "type": "session"
         },
         {
-          "background": "#1f2335",
+          "background": "#ff479c",
           "foreground": "#ffffff",
           "powerline_symbol": "\ue0b0",
           "properties": {
@@ -29,9 +29,9 @@
           "type": "path"
         },
         {
-          "background": "#1f2335",
+          "background": "#fffb38",
           "background_templates": [
-            "{{ if or (.Working.Changed) (.Staging.Changed) }}#7aa2f7{{ end }}",
+            "{{ if or (.Working.Changed) (.Staging.Changed) }}#FF9248{{ end }}",
             "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#ff4500{{ end }}",
             "{{ if gt .Ahead 0 }}#B388FF{{ end }}",
             "{{ if gt .Behind 0 }}#B388FF{{ end }}"
@@ -130,6 +130,28 @@
           },
           "style": "powerline",
           "type": "root"
+        },
+        {
+          "background": "#83769c",
+          "foreground": "#ffffff",
+          "properties": {
+            "always_enabled": true,
+            "template": "<transparent>\ue0b0</> \ufbab{{ .FormattedMs }}\u2800"
+          },
+          "style": "plain",
+          "type": "executiontime"
+        },
+        {
+          "background": "#00897b",
+          "background_templates": ["{{ if gt .Code 0 }}#e91e63{{ end }}"],
+          "foreground": "#ffffff",
+          "properties": {
+            "always_enabled": true,
+            "template": "<parentBackground>\ue0b0</> \ue23a "
+          },
+          "style": "diamond",
+          "trailing_diamond": "\ue0b4",
+          "type": "exit"
         }
       ],
       "type": "prompt"
