@@ -10,5 +10,3 @@ else
 	vim.g.tokyonight_dark_float = true
 	vim.cmd([[colorscheme tokyonight]])
 end
-
--- vim.cmd("colorscheme darkplus")

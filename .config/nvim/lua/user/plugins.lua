@@ -98,7 +98,6 @@ return packer.startup({
 			"nvim-treesitter/nvim-treesitter",
 			run = ":TSUpdate",
 		})
-		use("p00f/nvim-ts-rainbow") -- rainbow brackets (currently disabled)
 		use("windwp/nvim-ts-autotag") -- autocomplete tags
 
 		-- commenting

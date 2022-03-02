@@ -5,7 +5,7 @@
       "alignment": "left",
       "segments": [
         {
-          "background": "#c386f1",
+          "background": "#7aa2f7",
           "foreground": "#FFFFFF",
           "leading_diamond": "\ue0b6",
           "properties": {
@@ -44,7 +44,7 @@
             "fetch_stash_count": true,
             "fetch_status": true,
             "fetch_upstream_icon": true,
-            "template": " {{ .UpstreamIcon }}{{ .HEAD }}{{ .BranchStatus }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }} "
+            "template": " {{ .UpstreamIcon }}{{ .HEAD }}"
           },
           "style": "powerline",
           "trailing_diamond": "\ue0b4",

@@ -1,8 +1,6 @@
 # colours
 autoload -Uz colors && colors
-
 eval "$(oh-my-posh --init --shell zsh --config '~/.config/posh/config.json')"
-
 # useful Functions
 source "$ZDOTDIR/functions"
 
