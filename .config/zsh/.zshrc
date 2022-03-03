@@ -1,6 +1,9 @@
 # colours
 autoload -Uz colors && colors
-eval "$(oh-my-posh --init --shell zsh --config '~/.config/posh/config.json')"
+
+TYPEWRITTEN_SYMBOL="$"
+TYPEWRITTEN_DISABLE_RETURN_CODE=true
+
 # useful Functions
 source "$ZDOTDIR/functions"
 
@@ -35,3 +38,7 @@ export PATH=~/.local/bin:$PATH
 
 # run ls (alias version) on directory change
 chpwd() ls
+
+# Set typewritten ZSH as a prompt
+autoload -U promptinit; promptinit
+prompt typewritten

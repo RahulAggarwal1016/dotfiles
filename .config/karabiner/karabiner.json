@@ -18,7 +18,7 @@
           {
             "manipulators": [
               {
-                "description": "Ctrl+Tab to Cmd+Tab",
+                "description": "Cmd+Tab to Cmd+l",
                 "from": {
                   "key_code": "l",
                   "modifiers": {
@@ -34,7 +34,7 @@
                 "type": "basic"
               },
               {
-                "description": "Ctrl+Tab to Cmd+Tab",
+                "description": "Cmd+Tab to Cmd+h",
                 "from": {
                   "key_code": "h",
                   "modifiers": {
