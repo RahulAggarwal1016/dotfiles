@@ -11,10 +11,11 @@ brew uninstall --ignore-dependencies node
 brew uninstall --force node
 
 # Install more recent versions of some macOS tools.
-brew install grep 
 brew install openssh
 brew install screen
-brew install bash
+brew install grep 
+brew upgrade bash
+brew upgrade zsh
 
 # Install packages
 brew install git 

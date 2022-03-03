@@ -122,6 +122,12 @@ OR
 System Preferences -> Users and Groups -> Advanced Configuration
 ```
 
+Install a prompt for zsh
+
+```
+npm install -g typewritten
+```
+
 ## Terminal
 
 ![image](https://user-images.githubusercontent.com/35639417/147966952-61a57bf9-0304-4bd6-a300-ea688171631b.png)
