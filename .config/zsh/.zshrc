@@ -1,8 +1,9 @@
 # colours
 autoload -Uz colors && colors
 
-TYPEWRITTEN_SYMBOL="$"
-TYPEWRITTEN_DISABLE_RETURN_CODE=true
+# Set typewritten ZSH as a prompt
+autoload -U promptinit; promptinit
+prompt typewritten
 
 # useful Functions
 source "$ZDOTDIR/functions"
@@ -11,6 +12,7 @@ source "$ZDOTDIR/functions"
 HISTFILE=~/.zsh_history
 
 # some useful options (man zshoptions)
+unsetopt BEEP
 setopt autocd extendedglob nomatch menucomplete
 setopt interactive_comments
 stty stop undef		# Disable ctrl-s to freeze terminal.
@@ -22,11 +24,9 @@ zsh_add_file "aliases"
 zsh_add_file "exports"
 
 # Plugins
+zsh_add_plugin "hlissner/zsh-autopair"
 zsh_add_plugin "zsh-users/zsh-autosuggestions"
 zsh_add_plugin "zsh-users/zsh-syntax-highlighting"
-
-# beeping is annoying
-unsetopt BEEP
 
 # to use local modules like prettier
 export PATH="$PATH:./node_modules/.bin" 
@@ -38,7 +38,3 @@ export PATH=~/.local/bin:$PATH
 
 # run ls (alias version) on directory change
 chpwd() ls
-
-# Set typewritten ZSH as a prompt
-autoload -U promptinit; promptinit
-prompt typewritten

@@ -57,8 +57,7 @@ return packer.startup({
 		use("antoinemadec/FixCursorHold.nvim") -- This is needed to fix lsp doc highlight
 		use("folke/which-key.nvim") -- Display keybinds
 
-		-- colour schemes
-		use("lunarvim/darkplus.nvim")
+		-- Colorscheme
 		use("folke/tokyonight.nvim")
 
 		-- Tmux Synergy
