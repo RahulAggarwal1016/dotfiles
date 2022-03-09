@@ -34,7 +34,7 @@
                 "type": "basic"
               },
               {
-                "description": "Cmd+Tab to Cmd+h",
+                "description": "Cmd+Tab to Cmd+l",
                 "from": {
                   "key_code": "h",
                   "modifiers": {

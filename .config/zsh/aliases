@@ -41,6 +41,7 @@ alias xcode='open -a Xcode'
 alias cat='bat'
 
 # git
+alias g='git'
 alias gaa='git add .'
 alias gb='git branch'
 alias gc='git checkout'
