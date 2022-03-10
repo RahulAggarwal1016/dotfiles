@@ -1,10 +1,6 @@
 # colours
 autoload -Uz colors && colors
 
-# Set typewritten ZSH as a prompt
-autoload -U promptinit; promptinit
-prompt typewritten
-
 # useful Functions
 source "$ZDOTDIR/functions"
 
@@ -22,6 +18,10 @@ zle_highlight=('paste:none')
 zsh_add_file "vim-mode"
 zsh_add_file "aliases"
 zsh_add_file "exports"
+
+# Set typewritten ZSH as a prompt
+autoload -U promptinit; promptinit
+prompt typewritten
 
 # Plugins
 zsh_add_plugin "hlissner/zsh-autopair"

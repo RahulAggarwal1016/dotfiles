@@ -14,8 +14,8 @@ brew uninstall --force node
 brew install openssh
 brew install screen
 brew install grep 
-brew upgrade bash
-brew upgrade zsh
+brew install bash
+brew install zsh
 
 # Install packages
 brew install git 
