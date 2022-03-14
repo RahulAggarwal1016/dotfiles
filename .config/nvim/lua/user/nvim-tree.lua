@@ -71,11 +71,13 @@ nvim_tree.setup({
 	},
 	filters = {
 		dotfiles = false,
-		custom = {},
+		custom = {
+			"node_modules",
+		},
 	},
 	git = {
 		enable = true,
-		ignore = true,
+		ignore = false,
 		timeout = 500,
 	},
 	view = {
@@ -94,7 +96,7 @@ nvim_tree.setup({
 			},
 		},
 		number = false,
-		relativenumber = false,
+		relativenumber = true,
 	},
 	trash = {
 		cmd = "trash",
