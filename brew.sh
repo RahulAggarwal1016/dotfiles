@@ -41,17 +41,19 @@ brew install tig
 brew install mysql@5.7
 
 # Applications
-brew cask install --appdir="/Applications" google-chrome
-brew cask install --appdir="/Applications" slack
-brew cask install --appdir="/Applications" spotify
-brew cask install --appdir="/Applications" postman
-brew cask install --appdir="/Applications" appcleaner
-brew cask install --appdir="/Applications" alacritty
-brew cask install --appdir="/Applications" docker
-brew cask install --appdir="/Applications" discord
-brew cask install --appdir="/Applications" mysqlworkbench
-brew cask install --appdir="/Applications" alfred
-brew cask install --appdir="/Applications" karabiner-elements
+brew install --appdir="/Applications" google-chrome
+brew install --appdir="/Applications" slack
+brew install --appdir="/Applications" spotify
+brew install --appdir="/Applications" postman
+brew install --appdir="/Applications" appcleaner
+brew install --appdir="/Applications" alacritty
+brew install --appdir="/Applications" docker
+brew install --appdir="/Applications" discord
+brew install --appdir="/Applications" mysqlworkbench
+brew install --appdir="/Applications" alfred
+brew install --appdir="/Applications" alfred
+brew install --appdir="/Applications" karabiner-elements
+brew install --appdir="/Applications" alt-tab
 
 # Fonts
 brew tap homebrew/cask-fonts
