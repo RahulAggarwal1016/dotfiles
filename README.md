@@ -32,20 +32,7 @@ chmod -R +x ./brew.sh
 
 ## Setup Node with Global Permissions
 
-1. Make a directory for NVM.
-
-```
-mkdir ~/.nvm
-```
-
-Add the below lines to `~/.config/zsh/.zshrc`.
-
-```
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
-```
-
-Source your profile and ensure nvm is installed by running the following command.
+1. Install NVM and ensure installation by running the following command.
 
 ```
 command -v nvm

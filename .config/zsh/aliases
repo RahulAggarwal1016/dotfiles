@@ -71,7 +71,7 @@ alias gs='git status'
 alias gst='git stash'
 alias undo='git reset --soft HEAD~1'
 
-alias src='source ~/.config/zsh/.zshrc' 
+alias src='exec zsh' 
 alias paths='echo -e ${PATH//:/\\n}'
 
 # colorize grep output (good for log files)

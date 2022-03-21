@@ -57,17 +57,17 @@ return packer.startup({
 		use("antoinemadec/FixCursorHold.nvim") -- This is needed to fix lsp doc highlight
 		use("folke/which-key.nvim") -- Display keybinds
 
-		-- Colorscheme
+		-- colorscheme
 		use("folke/tokyonight.nvim")
 
-		-- Tmux Synergy
+		-- tmux Synergy
 		use("christoomey/vim-tmux-navigator")
 		use("preservim/vimux")
 
 		-- notifications
 		use("rcarriga/nvim-notify")
 
-		-- 	-- cmp plugins
+		-- cmp plugins
 		use("hrsh7th/nvim-cmp") -- The completion plugin
 		use("hrsh7th/cmp-buffer") -- buffer completions
 		use("hrsh7th/cmp-path") -- path completions
@@ -80,13 +80,13 @@ return packer.startup({
 		use("L3MON4D3/LuaSnip") --snippet engine
 		use("rafamadriz/friendly-snippets") -- a bunch of snippets to use
 
-		-- LSP
+		-- lSP
 		use("neovim/nvim-lspconfig") -- enable LSP
 		use("williamboman/nvim-lsp-installer") -- simple to use language server installer
 		use("tamago324/nlsp-settings.nvim") -- language server settings defined in json
 		use("jose-elias-alvarez/null-ls.nvim") -- for formatters and linters
 
-		-- Scheme Store
+		-- scheme store
 		use("b0o/schemastore.nvim")
 
 		-- telescope
