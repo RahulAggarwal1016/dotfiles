@@ -102,16 +102,18 @@ cmp.setup({
 			-- Kind icons
 			vim_item.kind = string.format("%s", kind_icons[vim_item.kind])
 			vim_item.menu = ({
-				nvim_lsp = "LSP",
-				nvim_lua = "LUA",
-				luasnip = "Snippet",
-				buffer = "Buffer",
-				path = "Path",
+				cmp_tabnine = "[TN]",
+				nvim_lsp = "[LSP]",
+				luasnip = "[SNP]",
+				buffer = "[Buffer]",
+				nvim_lua = "[Lua]",
+				path = "[Path]",
 			})[entry.source.name]
 			return vim_item
 		end,
 	},
 	sources = {
+		{ name = "cmp_tabnine" },
 		{ name = "nvim_lsp" },
 		{ name = "nvim_lua" },
 		{ name = "luasnip" },

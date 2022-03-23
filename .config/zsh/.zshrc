@@ -27,8 +27,8 @@ zsh_add_plugin "zsh-users/zsh-autosuggestions"
 zsh_add_plugin "zsh-users/zsh-syntax-highlighting"
 
 export PATH="$PATH:./node_modules/.bin" # to use local modules like prettier
-export PATH=~/.npm-global/bin:$PATH
-export PATH=~/.local/bin:$PATH
+export PATH="$PATH:~/.npm-global/bin"
+export PATH="$PATH:~/.local/bin"
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
