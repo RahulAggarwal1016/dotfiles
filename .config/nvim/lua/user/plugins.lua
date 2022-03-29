@@ -60,7 +60,7 @@ return packer.startup({
 		-- colorscheme
 		use("folke/tokyonight.nvim")
 
-		-- tmux Synergy
+		-- tmux synergy
 		use("christoomey/vim-tmux-navigator")
 		use("preservim/vimux")
 
