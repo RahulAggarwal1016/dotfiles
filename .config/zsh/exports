@@ -3,7 +3,7 @@ export TERMINAL="alacritty"
 export JAVA_HOME="$(/usr/libexec/java_home -v 16)"
 
 export TYPEWRITTEN_SYMBOL="❯"
-export TYPEWRITTEN_DISABLE_RETURN_CODE="true"
+export TYPEWRITTEN_DISABLE_RETURN_CODE=true
 export TYPEWRITTEN_RELATIVE_PATH="adaptive"
 export TYPEWRITTEN_ARROW_SYMBOL="➜"
 export TYPEWRITTEN_COLOR_MAPPINGS="primary:#7aa2f7;secondary:#7aa2f7"

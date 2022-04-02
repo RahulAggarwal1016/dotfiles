@@ -1,4 +1,5 @@
 local null_ls_status_ok, null_ls = pcall(require, "null-ls")
+
 if not null_ls_status_ok then
 	return
 end
@@ -23,6 +24,5 @@ null_ls.setup({
 		formatting.prettierd, -- javascript, typescript, html etc
 		formatting.black.with({ extra_args = { "--fast" } }), -- python
 		code_actions.gitsigns,
-		diagnostics.eslint_d,
 	},
 })
