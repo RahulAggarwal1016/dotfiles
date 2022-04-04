@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
 brew update
-brew upgrade
 
 # Save Homebrew’s installed location.
 BREW_PREFIX=$(brew --prefix)
@@ -25,7 +22,6 @@ brew install zsh
 brew install tmux
 brew install yarn
 brew install nvm
-brew install gradle
 
 # Install utility binaries
 brew install trash-cli
@@ -50,7 +46,6 @@ brew install --appdir="/Applications" alacritty
 brew install --appdir="/Applications" docker
 brew install --appdir="/Applications" discord
 brew install --appdir="/Applications" mysqlworkbench
-brew install --appdir="/Applications" alfred
 brew install --appdir="/Applications" alfred
 brew install --appdir="/Applications" karabiner-elements
 brew install --appdir="/Applications" alt-tab

@@ -2,7 +2,6 @@
 alias ..='cd ..'
 alias ~='cd ~'
 alias d='cd ~/Desktop'
-alias f='cd ~/Desktop/Faire/backend'
 alias htn='cd ~/Desktop/Hack_the_North/hackerapi.com-v3/'
 alias dl='cd ~/Downloads'
 alias cfg="cd ~/.config"
@@ -28,6 +27,7 @@ alias tk="tmux kill-session -t"
 alias dekp='./tools/hooks/manage-git-hooks push'
 alias dekc='./tools/hooks/manage-git-hooks commit'
 alias fstart='cd ~/Desktop/Faire/backend/docker/compose/dependencies/ && brew services start mysql@5.7 && docker-compose up -d && cd ../../../'
+alias f='cd ~/Desktop/Faire/backend'
 
 # Shortcuts 
 alias ls='lsd'
