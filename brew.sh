@@ -9,10 +9,7 @@ brew uninstall --force node
 
 # Install more recent versions of some macOS tools.
 brew install openssh
-brew install screen
 brew install grep 
-brew install bash
-brew install zsh
 
 # Install packages
 brew install git 
