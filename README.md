@@ -98,6 +98,8 @@ https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.m
 :checkhealth
 ```
 
+**TIP:** If there are any weird issues try deleting `packer_compiled.lua` and regenerate it.
+
 ## Shell
 
 Change your default system shell to `/bin/zsh` if not done already.
@@ -163,6 +165,15 @@ Hit `Finder -> Preferences` and remove tabs/items that you do not use regularly.
 
 Use Karabiner elements to add basic Vim keybindings to Mac OS.
 
-5. Disable Spotlight and use Alfred instead.
+5. Disable Spotlight and use Alfred instead (give it full permissions).
 
 Uncheck `System Preferences -> Spotlight -> Keyboard Shortcuts -> Show Spotlight Search`.
+
+6. Install Alt-Tab for better window switching.
+
+Add blacklists
+
+```
+com.McAfee.McAfeeSafariHost
+com.apple.finder
+```
