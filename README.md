@@ -12,6 +12,16 @@ Tips:
 - Don't pull into a bare git repository
 - Don't cd into a bare git repository (perform commands from `$HOME`)
 
+Run the following commands in order
+
+```
+cd ~ && echo "dotfiles" >> .gitignore
+git clone --bare https://github.com/RahulAggarwal1016/dotfiles.git $HOME/dotfiles
+alias dot='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
+dot checkout
+dot config --local status.showUntrackedFiles no
+```
+
 ## Sensible macOS defaults
 
 When setting up a new Mac, you may want to set some sensible macOS defaults:
@@ -30,7 +40,7 @@ chmod -R +x ./brew.sh
 ./brew.sh
 ```
 
-## Setup Node with Global Permissions
+## Setup Node with Global Permissions and Install Needed Packages
 
 1. Install NVM and ensure installation by running the following command.
 
@@ -46,11 +56,17 @@ node --version
 # => v10.16.3
 ```
 
-3. Give Node global permissions (won't need sudo)
+3. Give Node global permissions (won't need sudo).
 
 ```
 mkdir ~/.npm-global
 npm config set prefix '~/.npm-global'
+```
+
+4. Install needed packages.
+
+```
+npm install -g neovim typewritten @fsouza/prettierd
 ```
 
 ## IDE
@@ -58,38 +74,25 @@ npm config set prefix '~/.npm-global'
 ![image](https://user-images.githubusercontent.com/35639417/147967100-96f9dd12-26f3-4e13-9d40-e05f9a174e66.png)
 ![image](https://user-images.githubusercontent.com/35639417/147967067-f6d91fe5-7668-4227-a54b-a498630a833d.png)
 
-1. Install python support (node is optional).
+1. Install python support.
 
 ```
 pip3 install pynvim
 ```
 
-Neovim node support
-
-```
-npm i -g neovim
-```
-
-3. Install all necessary plugins (you will see treesitter installing a bunch of parsers the first time neovim is loaded).
+2. Install all necessary plugins (you will see treesitter installing a bunch of parsers the first time neovim is loaded).
 
 ```
 cd ~/.config/nvim && nvim
 ```
 
-4. Install a language server protocol. Run `:LspInstallInfo` and hit `i` over the different servers you wish to use.
+3. Install a language server protocol. Run `:LspInstallInfo` and hit `i` over the different servers you wish to use.
 
-5. Install any necessary add-ons for null-ls and formatting.
-
-```
-npm install -g @fsouza/prettierd
-npm install -g eslint_d
-```
-
-6. Install any necessary packages for lsp servers.
+4. Install any necessary add-ons for null-ls, formatting or lsp servers.
 
 https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
 
-7. Execute the below command to check the health of your IDE.
+5. Execute the below command to check the health of your IDE.
 
 ```
 :checkhealth
@@ -107,12 +110,6 @@ OR
 
 ```
 System Preferences -> Users and Groups -> Advanced Configuration
-```
-
-Install a prompt for zsh
-
-```
-npm install -g typewritten
 ```
 
 ## Terminal
@@ -160,9 +157,9 @@ map <C-l> goForward
 
 3. Remove clutter from the Finder.
 
-Hit `Finder -> Preferences` and remove tabs/items that you do not use regularily.
+Hit `Finder -> Preferences` and remove tabs/items that you do not use regularly.
 
-4. Bring Vim to MacOS.
+4. Setup Vim keybinds for MacOS.
 
 Use Karabiner elements to add basic Vim keybindings to Mac OS.
 
