@@ -3,6 +3,9 @@ if not status_ok then
 	return
 end
 
+local actions = require("telescope.actions")
+local state = require("telescope.state")
+
 local setup = {
 	plugins = {
 		marks = true, -- shows a list of your marks on ' and `
@@ -98,7 +101,7 @@ local mappings = {
 		"Buffers",
 	},
 	["c"] = { "<cmd>Bdelete<CR>", "Close Buffer" },
-	["F"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
+	["F"] = { "<cmd>Telescope live_grep<cr>", "Find Text" },
 	["P"] = { "<cmd>Telescope projects<cr>", "Projects" },
 
 	p = {

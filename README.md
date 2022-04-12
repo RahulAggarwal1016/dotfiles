@@ -177,3 +177,7 @@ Add blacklists
 com.McAfee.McAfeeSafariHost
 com.apple.finder
 ```
+
+7. Increase Key Repeat.
+
+Go into `System Preferences -> Keyboard`, maximize `Key Repeat`, and minimize `Delay until repeat`.
