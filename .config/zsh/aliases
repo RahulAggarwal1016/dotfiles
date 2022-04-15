@@ -8,7 +8,7 @@ alias cfg="cd ~/.config"
 alias c="clear"
 
 # School
-alias uw='ssh -Y r28aggar@linux.student.cs.uwaterloo.ca'
+alias uw='dssh -Y r28aggar@linux.student.cs.uwaterloo.ca'
 alias cpl='g++ --std=c++17 -o'
 alias leak='valgrind --leak-check=full --track-origins=yes --show-leak-kinds=all'
 
@@ -17,7 +17,7 @@ alias dot='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 alias daa='dot add -A'
 alias dp='dot push origin master'
 alias ds='dot status'
-alias ddiff='dot diff | bat'
+alias dd='dot diff | bat'
 alias dca='daa & dot commit -a'
 
 alias tls="tmux ls"

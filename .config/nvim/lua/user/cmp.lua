@@ -45,6 +45,9 @@ local kind_icons = {
 }
 -- find more here: https://www.nerdfonts.com/cheat-sheet
 cmp.setup({
+	window = {
+		documentation = false,
+	},
 	completion = {
 		completeopt = "menu,menuone,noinsert",
 	},
@@ -122,11 +125,7 @@ cmp.setup({
 		behavior = cmp.ConfirmBehavior.Replace,
 		select = false,
 	},
-	documentation = {
-		border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
-	},
-	experimental = {
-		ghost_text = false,
-		native_menu = false,
+	view = {
+		entries = "native",
 	},
 })

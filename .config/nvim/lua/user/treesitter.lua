@@ -7,9 +7,28 @@ configs.setup({
 	autotag = {
 		enable = true,
 	},
-	ensure_installed = "maintained", -- one of "all", "maintained" (parsers with maintainers), or a list of languages
+	ensure_installed = {
+		"bash",
+		"c",
+		"cpp",
+		"css",
+		"dockerfile",
+		"graphql",
+		"hjson",
+		"html",
+		"http",
+		"javascript",
+		"json",
+		"json5",
+		"jsonc",
+		"lua",
+		"prisma",
+		"python",
+		"yaml",
+		"vim",
+		"typescript",
+	},
 	sync_install = false, -- install languages synchronously (only applied to `ensure_installed`)
-	ignore_install = { "" }, -- List of parsers to ignore installing
 	autopairs = {
 		enable = true,
 	},
@@ -23,4 +42,5 @@ configs.setup({
 		enable = true,
 		enable_autocmd = false,
 	},
+	additional_vim_regex_highlighting = false,
 })
