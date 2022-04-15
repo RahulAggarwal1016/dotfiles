@@ -17,7 +17,7 @@ alias dot='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 alias dp='dot push origin master'
 alias ds='dot status'
 alias dd='dot diff | bat'
-alias dca='dot add -u & dot commit -a'
+alias dca='dot add -u && dot commit'
 
 alias tls="tmux ls"
 alias tk="tmux kill-session -t"
