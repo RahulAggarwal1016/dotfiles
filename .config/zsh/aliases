@@ -1,7 +1,6 @@
 # Easier navigation
 alias ..='cd ..'
-alias ~='cd ~'
-alias d='cd ~/Desktop'
+alias ~='cd ~' alias d='cd ~/Desktop'
 alias htn='cd ~/Desktop/Hack_the_North/hackerapi.com-v3/'
 alias dl='cd ~/Downloads'
 alias cfg="cd ~/.config"
@@ -54,7 +53,7 @@ alias gdel='git branch -D'
 alias gf='git fetch'
 alias gpl='git pull origin'
 alias gp='git push origin'
-alias glg='tig'
+alias glg='TERM=xterm tig'
 alias gm='git merge'
 alias gr='git remote'
 alias gra='git remote add origin'

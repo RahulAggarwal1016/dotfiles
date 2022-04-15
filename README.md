@@ -98,6 +98,13 @@ https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.m
 :checkhealth
 ```
 
+6. Add the following to your `.git config`
+
+```
+[core]
+	editor = nvim
+```
+
 **TIP:** If there are any weird issues try deleting `packer_compiled.lua` and regenerate it.
 
 ## Shell
