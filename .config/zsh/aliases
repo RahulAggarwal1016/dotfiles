@@ -14,11 +14,10 @@ alias leak='valgrind --leak-check=full --track-origins=yes --show-leak-kinds=all
 
 # Dot aliases
 alias dot='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
-alias daa='dot add -A'
 alias dp='dot push origin master'
 alias ds='dot status'
 alias dd='dot diff | bat'
-alias dca='daa & dot commit -a'
+alias dca='dot add -u & dot commit -a'
 
 alias tls="tmux ls"
 alias tk="tmux kill-session -t"
