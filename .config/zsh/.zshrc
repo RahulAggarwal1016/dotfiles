@@ -29,6 +29,8 @@ export PATH="$PATH:~/.local/bin"
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+. ~/.config/zsh/z.sh
+
 # run ls (alias version) on directory change
 chpwd() ls
 

@@ -8,6 +8,7 @@ export TYPEWRITTEN_DISABLE_RETURN_CODE=true
 export TYPEWRITTEN_RELATIVE_PATH="adaptive"
 export TYPEWRITTEN_ARROW_SYMBOL="➜"
 export TYPEWRITTEN_CURSOR="terminal"
+export _Z_CMD="j"
 
 # Prefer US English and use UTF-8.
 export LANG='en_US.UTF-8';

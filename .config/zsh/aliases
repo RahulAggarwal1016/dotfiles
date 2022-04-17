@@ -21,6 +21,8 @@ alias dca='dot add -u && dot commit'
 alias tls="tmux ls"
 alias tk="tmux kill-session -t"
 
+alias nf="nvim "\$"(fzf)"
+
 # Faire
 alias dekp='./tools/hooks/manage-git-hooks push'
 alias dekc='./tools/hooks/manage-git-hooks commit'
