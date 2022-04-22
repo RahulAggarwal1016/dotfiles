@@ -23,12 +23,6 @@ alias tk="tmux kill-session -t"
 
 alias nf="nvim "\$"(fzf)"
 
-# Faire
-alias dekp='./tools/hooks/manage-git-hooks push'
-alias dekc='./tools/hooks/manage-git-hooks commit'
-alias fstart='cd ~/Desktop/Faire/backend/docker/compose/dependencies/ && brew services start mysql@5.7 && docker-compose up -d && cd ../../../'
-alias f='cd ~/Desktop/Faire/backend'
-
 # Shortcuts 
 alias ls='lsd'
 alias la='ls -al'
@@ -85,10 +79,6 @@ alias rm='() { trash $@ && ls }'
 
 # update Homebrew, npm, and their installed packages
 alias update='brew update; brew upgrade; brew cleanup; npm install npm -g; npm update -g;'
-
-# Show/hide hidden files in Finder
-alias show='defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder'
-alias hide='defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder'
 
 # easier to read disk
 alias df='df -h'     # human-readable sizes

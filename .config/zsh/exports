@@ -1,6 +1,5 @@
 export EDITOR="nvim"
 export TERMINAL="alacritty"
-export JAVA_HOME="$(/usr/libexec/java_home -v 16)"
 
 export TYPEWRITTEN_COLOR_MAPPINGS="primary:#7aa2f7;secondary:#7aa2f7"
 export TYPEWRITTEN_SYMBOL="❯"
