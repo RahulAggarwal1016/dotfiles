@@ -46,6 +46,7 @@ brew install --appdir="/Applications" mysqlworkbench
 brew install --appdir="/Applications" alfred
 brew install --appdir="/Applications" karabiner-elements
 brew install --appdir="/Applications" alt-tab
+brew install --appdir="/Applications" amethyst
 
 # Fonts
 brew tap homebrew/cask-fonts

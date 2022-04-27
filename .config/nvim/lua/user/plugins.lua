@@ -80,7 +80,7 @@ return packer.startup({
 		use("L3MON4D3/LuaSnip") --snippet engine
 		use("rafamadriz/friendly-snippets") -- a bunch of snippets to use
 
-		-- lSP
+		-- lsp
 		use("neovim/nvim-lspconfig") -- enable LSP
 		use("williamboman/nvim-lsp-installer") -- simple to use language server installer
 		use("tamago324/nlsp-settings.nvim") -- language server settings defined in json
@@ -88,6 +88,9 @@ return packer.startup({
 
 		-- scheme store
 		use("b0o/schemastore.nvim")
+
+		-- markdown live preview
+		use({ "iamcco/markdown-preview.nvim", run = "cd app && yarn install" })
 
 		-- telescope
 		use("nvim-telescope/telescope.nvim")

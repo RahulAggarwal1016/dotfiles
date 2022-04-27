@@ -7,7 +7,7 @@ alias cfg="cd ~/.config"
 alias c="clear"
 
 # School
-alias uw='dssh -Y r28aggar@linux.student.cs.uwaterloo.ca'
+alias uw='ssh -Y r28aggar@linux.student.cs.uwaterloo.ca'
 alias cpl='g++ --std=c++17 -o'
 alias leak='valgrind --leak-check=full --track-origins=yes --show-leak-kinds=all'
 
@@ -76,6 +76,9 @@ alias mv='mv -i'
 
 # safely delete
 alias rm='() { trash $@ && ls }'
+
+alias fport='() { sudo lsof -i:$@ }'
+alias kport='() { sudo kill -9 $@ }'
 
 # update Homebrew, npm, and their installed packages
 alias update='brew update; brew upgrade; brew cleanup; npm install npm -g; npm update -g;'
