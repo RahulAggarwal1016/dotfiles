@@ -32,6 +32,10 @@ brew install ripgrep
 brew install lf
 brew install tig
 brew install mysql@5.7
+# for ccls lsp server (for c++)
+brew install llvm 
+brew install cmake
+brew install ccls
 
 # Applications
 brew install --appdir="/Applications" google-chrome
@@ -47,6 +51,7 @@ brew install --appdir="/Applications" alfred
 brew install --appdir="/Applications" karabiner-elements
 brew install --appdir="/Applications" alt-tab
 brew install --appdir="/Applications" amethyst
+brew install --appdir="/Applications" visual-studio-code
 
 # Fonts
 brew tap homebrew/cask-fonts
