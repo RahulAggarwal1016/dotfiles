@@ -58,7 +58,7 @@ return packer.startup({
 		use("folke/which-key.nvim") -- Display keybinds
 
 		-- colorscheme
-		use("folke/tokyonight.nvim")
+		use({ "catppuccin/nvim", as = "catppuccin" })
 
 		-- tmux synergy
 		use("christoomey/vim-tmux-navigator")
@@ -89,10 +89,6 @@ return packer.startup({
 		-- scheme store
 		use("b0o/schemastore.nvim")
 
-		-- markdown live preview
-		use({ "iamcco/markdown-preview.nvim", run = "cd app && yarn install" })
-
-		-- telescope
 		use("nvim-telescope/telescope.nvim")
 
 		-- treesitter

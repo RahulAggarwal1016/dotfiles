@@ -22,6 +22,7 @@ zsh_add_plugin "hlissner/zsh-autopair"
 zsh_add_plugin "zsh-users/zsh-autosuggestions"
 zsh_add_plugin "zsh-users/zsh-syntax-highlighting"
 
+export PATH="$PATH:~/Library/Python/3.8/bin"
 export PATH="$PATH:./node_modules/.bin" # to use local modules like prettier
 export PATH="$PATH:~/.npm-global/bin"
 export PATH="$PATH:~/.local/bin"
@@ -35,5 +36,5 @@ export PATH="$PATH:~/.local/bin"
 chpwd() ls
 
 # Set typewritten ZSH as a prompt (load after exports)
-autoload -U promptinit; promptinit
-prompt typewritten
+# autoload -U promptinit; promptinit
+# prompt typewritten

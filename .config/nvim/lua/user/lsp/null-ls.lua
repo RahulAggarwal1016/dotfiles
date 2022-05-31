@@ -20,6 +20,7 @@ null_ls.setup({
 		end
 	end,
 	sources = {
+		-- diagnostics.flake8, -- python diagnostics (mainly related to formatting)
 		formatting.stylua, -- lua files
 		formatting.prettierd, -- javascript, typescript, html etc
 		formatting.black.with({ extra_args = { "--fast" } }), -- python

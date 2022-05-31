@@ -7,9 +7,9 @@ alias dl='cd ~/Downloads'
 alias cfg="cd ~/.config"
 alias c="clear"
 
-alias uw='ssh r28aggar@linux.student.cs.uwaterloo.ca'
-alias cpl='g++ --std=c++17' 
-alias leak='valgrind --leak-check=full --track-origins=yes --show-leak-kinds=all'
+# school
+alias uw='ssh -Y r28aggar@linux.student.cs.uwaterloo.ca'
+alias transfer='() { scp $@ r28aggar@linux.student.cs.uwaterloo.ca:~/cs247 }'
 
 # Dot aliases
 alias dot='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
@@ -79,8 +79,6 @@ alias rm='() { trash $@ && ls }'
 
 alias fport='() { sudo lsof -i:$@ }'
 alias kport='() { sudo kill -9 $@ }'
-
-alias transfer='() { scp $@ r28aggar@linux.student.cs.uwaterloo.ca:~/cs247 }'
 
 # update Homebrew, npm, and their installed packages
 alias update='brew update; brew upgrade; brew cleanup; npm install npm -g; npm update -g;'
