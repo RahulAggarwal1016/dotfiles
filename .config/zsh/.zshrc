@@ -36,5 +36,5 @@ export PATH="$PATH:~/.local/bin"
 chpwd() ls
 
 # Set typewritten ZSH as a prompt (load after exports)
-# autoload -U promptinit; promptinit
-# prompt typewritten
+autoload -U promptinit; promptinit
+prompt typewritten
