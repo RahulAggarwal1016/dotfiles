@@ -31,7 +31,7 @@ window:
     x: 2
     y: 2
 
-  opacity: 1.00
+  opacity: 0.70
 
   dimensions:
     columns: 120
