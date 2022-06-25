@@ -43,7 +43,7 @@ catppuccin.setup({
 		nvimtree = {
 			enabled = true,
 			show_root = true,
-			transparent_panel = false,
+			transparent_panel = true,
 		},
 		neotree = {
 			enabled = false,

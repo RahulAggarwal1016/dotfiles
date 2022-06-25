@@ -33,12 +33,11 @@ alias rnm='rm -rf node_modules/ && npm install'
 alias gbls='brew list && npm list -g --depth 0'
 alias xcode='open -a Xcode'
 
-alias tig='TERM=xterm tig'
-
 # git
 alias gbl='tig blame'
 alias glg='tig log'
 alias gs='tig status'
+
 alias gaa='git add -A ':!package-lock.json''
 alias gca='gaa && git commit'
 alias gb='git branch'

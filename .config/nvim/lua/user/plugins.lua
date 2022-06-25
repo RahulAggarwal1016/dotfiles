@@ -102,7 +102,9 @@ return packer.startup({
 		use("numToStr/Comment.nvim")
 		use("JoosepAlviste/nvim-ts-context-commentstring")
 
-		use("lewis6991/gitsigns.nvim") -- "Display git changes"
+		use("lewis6991/gitsigns.nvim") -- display git changes
+
+		use("xiyaowong/nvim-transparent") -- transparent background
 
 		-- Automatically set up your configuration after cloning packer.nvim
 		-- Put this at the end after all plugins

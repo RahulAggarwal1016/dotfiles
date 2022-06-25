@@ -52,6 +52,7 @@ brew install --appdir="/Applications" karabiner-elements
 brew install --appdir="/Applications" alt-tab
 brew install --appdir="/Applications" amethyst
 brew install --appdir="/Applications" visual-studio-code
+brew install --appdir="/Applications" obsidian  
 
 # Fonts
 brew tap homebrew/cask-fonts
