@@ -6,7 +6,7 @@ set line-graphics = no
 set main-view-date = custom
 set main-view-date-format = "%Y-%m-%d %H:%M"
 
-color cursor black cyan bold
+color cursor white black
 
 bind generic g  none
 bind generic gg move-first-line
