@@ -9,7 +9,7 @@ local state = require("telescope.state")
 local setup = {
 	plugins = {
 		marks = true, -- shows a list of your marks on ' and `
-		registers = true, -- shows your registers on " in NORMAL or <C-r> in INSERT mode
+		registers = false, -- shows your registers on " in NORMAL or <C-r> in INSERT mode
 		spelling = {
 			enabled = true, -- enabling this will show WhichKey when pressing z= to select spelling suggestions
 			suggestions = 20, -- how many suggestions should be shown in the list?
@@ -22,7 +22,7 @@ local setup = {
 			text_objects = false, -- help for text objects triggered after entering an operator
 			windows = false, -- default bindings on <c-w>
 			nav = false, -- misc bindings to work with windows
-			z = true, -- bindings for folds, spelling and others prefixed with z
+			z = false, -- bindings for folds, spelling and others prefixed with z
 			g = false, -- bindings for prefixed with g
 		},
 	},
@@ -48,7 +48,7 @@ local setup = {
 		spacing = 3, -- spacing between columns
 		align = "left", -- align columns left, center or right
 	},
-	ignore_missing = false, -- enable this to hide mappings for which you didn't specify a label
+	ignore_missing = true, -- enable this to hide mappings for which you didn't specify a label
 	hidden = { "<silent>", "<cmd>", "<Cmd>", "<CR>", "call", "lua", "^:", "^ " }, -- hide mapping boilerplate
 	show_help = true, -- show help message on the command line when the popup is visible
 	triggers = "auto", -- automatically setup triggers
@@ -73,37 +73,15 @@ local opts = {
 
 -- all leader key mappings go here (not in keymappings.lua)
 local mappings = {
-	["v"] = {
-		"<cmd>vsplit<CR>",
-		"Vertical Split",
-	},
-	["h"] = {
-		"<cmd>split<CR>",
-		"Horiztonal Split",
-	},
 	["w"] = {
 		"<cmd>tabnew %<CR>",
 		"New Window",
 	},
-	["a"] = { "<cmd>Alpha<cr>", "Alpha" },
 	["d"] = {
 		"<cmd>lua vim.lsp.diagnostic.set_loclist()<cr>",
 		"Diagnostics",
 	},
-	["q"] = { "<cmd>q!<CR>", "Quit" },
-	["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
-	["f"] = {
-		"<cmd>lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown{previewer = false})<cr>",
-		"Find files",
-	},
-	["b"] = {
-		"<cmd>lua require('telescope.builtin').buffers(require('telescope.themes').get_dropdown{previewer = false})<cr>",
-		"Buffers",
-	},
-	["c"] = { "<cmd>Bdelete<CR>", "Close Buffer" },
-	["F"] = { "<cmd>Telescope live_grep<cr>", "Find Text" },
 	["P"] = { "<cmd>Telescope projects<cr>", "Projects" },
-
 	p = {
 		name = "Packer",
 		c = { "<cmd>PackerCompile<cr>", "Compile" },

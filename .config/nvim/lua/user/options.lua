@@ -3,7 +3,7 @@
 local options = {
 	ruler = false,
 	incsearch = true,
-	hidden = true, -- persist background buffers on close
+	hidden = false, -- persist background buffers on close
 	backup = false, -- creates a backup file
 	clipboard = "unnamedplus", -- allows neovim to access the system clipboard
 	cmdheight = 2, -- more space in the neovim command line for displaying messages

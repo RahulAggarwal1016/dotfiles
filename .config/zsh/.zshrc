@@ -39,8 +39,9 @@ chpwd() ls
 autoload -U promptinit; promptinit
 prompt typewritten
 
+
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/rahul_aggarwal/Desktop/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/rahul_aggarwal/Desktop/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/Users/rahul_aggarwal/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/rahul_aggarwal/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/rahul_aggarwal/Desktop/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/rahul_aggarwal/Desktop/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f '/Users/rahul_aggarwal/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/rahul_aggarwal/google-cloud-sdk/completion.zsh.inc'; fi

@@ -76,8 +76,10 @@ alias mv='mv -i'
 # safely delete
 alias rm='() { trash $@ && ls }'
 
+# hack the north
 alias fport='() { sudo lsof -i:$@ }'
 alias kport='() { sudo kill -9 $@ }'
+alias kpos='sudo pkill -u postgres'
 
 # update Homebrew, npm, and their installed packages
 alias update='brew update; brew upgrade; brew cleanup; npm install npm -g; npm update -g;'

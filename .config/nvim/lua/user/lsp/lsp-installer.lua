@@ -3,34 +3,70 @@ if not status_ok then
 	return
 end
 
--- Register a handler that will be called for all installed servers.
--- Alternatively, you may also register handlers on specific server instances instead (see example below).
-lsp_installer.on_server_ready(function(server)
-	local opts = {
+local servers = {
+	"kotlin_language_server",
+	"pyright",
+	"tsserver",
+	"graphql",
+	"sqlls",
+	"ccls",
+	"bashls",
+	"sumneko_lua",
+	"jsonls",
+}
+
+local settings = {
+	ensure_installed = servers,
+	ui = {
+		icons = {},
+		keymaps = {
+			toggle_server_expand = "<CR>",
+			install_server = "i",
+			update_server = "u",
+			check_server_version = "c",
+			update_all_servers = "U",
+			check_outdated_servers = "C",
+			uninstall_server = "X",
+		},
+	},
+
+	log_level = vim.log.levels.INFO,
+}
+
+lsp_installer.setup(settings)
+
+local lspconfig_status_ok, lspconfig = pcall(require, "lspconfig")
+if not lspconfig_status_ok then
+	return
+end
+
+local opts = {}
+
+for _, server in pairs(servers) do
+	opts = {
 		on_attach = require("user.lsp.handlers").on_attach,
 		capabilities = require("user.lsp.handlers").capabilities,
 	}
 
-	if server.name == "sumneko_lua" then
+	if server == "sumneko_lua" then
 		local sumneko_opts = require("user.lsp.settings.sumneko_lua")
 		opts = vim.tbl_deep_extend("force", sumneko_opts, opts)
 	end
 
-	if server.name == "jsonls" then
+	if server == "jsonls" then
 		local jsonls_opts = require("user.lsp.settings.jsonls")
 		opts = vim.tbl_deep_extend("force", jsonls_opts, opts)
 	end
 
-	if server.name == "html" then
+	if server == "html" then
 		local html = require("user.lsp.settings.html").capabilities
 		opts = vim.tbl_deep_extend("force", html, opts)
 	end
 
-	if server.name == "graphql" then
+	if server == "graphql" then
 		opts.single_file_support = true
 	end
 
-	-- This setup() function is exactly the same as lspconfig's setup function.
-	-- Refer to https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
-	server:setup(opts)
-end)
+	lspconfig[server].setup(opts)
+	::continue::
+end

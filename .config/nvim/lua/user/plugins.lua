@@ -89,7 +89,11 @@ return packer.startup({
 		-- scheme store
 		use("b0o/schemastore.nvim")
 
+		-- telescope
 		use("nvim-telescope/telescope.nvim")
+
+		-- mark support
+		use("ThePrimeagen/harpoon")
 
 		-- treesitter
 		use({
