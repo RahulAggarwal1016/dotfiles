@@ -25,26 +25,26 @@ font:
     y: 0
 
 window:
-  # Startup Mode (changes require restart)
-  # startup_mode: Fullscreen
+  decorations: buttonless
+
+  dynamic_padding: false
+
   padding:
-    x: 2
-    y: 2
+    x: 15
+    y: 15
 
   opacity: 0.85
 
   dimensions:
-    columns: 120
+    columns: 130
     lines: 40
 
 scrolling:
-  # Maximum number of lines in the scrollback buffer.
-  # Specifying '0' will disable scrolling.
   history: 10000
 
   # Number of lines the viewport will move for every line scrolled when
   # scrollback is enabled (history > 0).
-  multiplier: 10
+  multiplier: 30
 
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true

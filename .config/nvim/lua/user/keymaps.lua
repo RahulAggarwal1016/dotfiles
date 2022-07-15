@@ -10,7 +10,6 @@ local opts = { noremap = true, silent = true }
 
 -- Shorten function name
 local keymap = vim.api.nvim_set_keymap
-
 -- Remap space as leader key
 keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
@@ -58,9 +57,6 @@ keymap("n", "<leader>h", "<cmd>split<CR>", opts)
 -- Quit
 keymap("n", "<leader>q", "<cmd>q!<CR>", opts)
 
--- Toggle Explorer
-keymap("n", "<leader>e", "<cmd>NvimTreeToggle<cr>", opts)
-
 -- Explorer
 keymap("n", "<leader>e", "<cmd>NvimTreeToggle<cr>", opts)
 
@@ -72,6 +68,7 @@ keymap("n", "<leader>F", "<cmd>Telescope live_grep<cr>", opts)
 
 -- Open Buffers
 keymap("n", "<leader>b", "<cmd>lua require('telescope.builtin').buffers()<cr>", opts)
+
 -- Close Buffer
 keymap("n", "<leader>c", "<cmd>Bdelete<CR>", opts)
 

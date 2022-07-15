@@ -23,7 +23,6 @@ brew install nvm
 # Install utility binaries
 brew install trash-cli
 brew install wget
-brew install bat
 brew install lsd
 brew install tree
 brew install black
@@ -32,10 +31,17 @@ brew install ripgrep
 brew install lf
 brew install tig
 brew install mysql@5.7
-# for ccls lsp server (for c++)
+
+# Ccls lsp server (for c++)
 brew install llvm 
 brew install cmake
 brew install ccls
+
+# Window Management
+brew install koekeishiya/formulae/yabai
+brew install skhd
+brew services start yabai
+brew services start skhd
 
 # Applications
 brew install --appdir="/Applications" google-chrome
@@ -50,7 +56,6 @@ brew install --appdir="/Applications" mysqlworkbench
 brew install --appdir="/Applications" alfred
 brew install --appdir="/Applications" karabiner-elements
 brew install --appdir="/Applications" alt-tab
-brew install --appdir="/Applications" amethyst
 brew install --appdir="/Applications" visual-studio-code
 brew install --appdir="/Applications" obsidian  
 

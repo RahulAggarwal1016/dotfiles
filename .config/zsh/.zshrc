@@ -29,7 +29,6 @@ export PATH="$PATH:~/.local/bin"
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
 . ~/.config/zsh/z.sh
 
 # run ls (alias version) on directory change
@@ -38,7 +37,6 @@ chpwd() ls
 # Set typewritten ZSH as a prompt (load after exports)
 autoload -U promptinit; promptinit
 prompt typewritten
-
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/rahul_aggarwal/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/rahul_aggarwal/google-cloud-sdk/path.zsh.inc'; fi
