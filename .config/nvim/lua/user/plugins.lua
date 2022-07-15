@@ -64,9 +64,6 @@ return packer.startup({
 		use("christoomey/vim-tmux-navigator")
 		use("preservim/vimux")
 
-		-- notifications
-		use("rcarriga/nvim-notify")
-
 		-- cmp plugins
 		use("hrsh7th/nvim-cmp") -- The completion plugin
 		use("hrsh7th/cmp-buffer") -- buffer completions

@@ -37,12 +37,6 @@ brew install llvm
 brew install cmake
 brew install ccls
 
-# Window Management
-brew install koekeishiya/formulae/yabai
-brew install skhd
-brew services start yabai
-brew services start skhd
-
 # Applications
 brew install --appdir="/Applications" google-chrome
 brew install --appdir="/Applications" slack
